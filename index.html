@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expense Calculator</title>
+  </head>
+  <body>
+    <h1 class="heading">Expense Calculator</h1>
+
+    <div class="container">
+      <!--Karşılama alanı-->
+      <h3 class="greet">
+        Welcome,
+        <input id="user-input" type="text" placeholder="your name.." />
+      </h3>
+      <!--form alanı-->
+      <form>
+        <!--Form üst kısım-->
+        <div class="double">
+          <div class="form-field">
+            <label>Expense</label>
+            <input id="name-input" type="text" />
+          </div>
+          <div class="form-field">
+            <label>The Price</label>
+            <input id="price-input" type="number" />
+          </div>
+        </div>
+        <!--Form alt kısım-->
+        <div class="double">
+            <div class="form-check-field">
+                <input type="checkbox" id="status-check">
+                <label for="status-check">Paid</label>
+            </div>
+            <button id="add-btn">Add</button>
+        </div>
+      </form>
+
+      <!--Toplam alanı-->
+      <div class="sum">
+        Total expense <span id="sum-info">0</span> &#x20BA;
+      </div>
+      <!--Filtreleme alanı-->
+      <select >
+        <option value="all">All</option>
+        <option value="paid">Paid</option>
+        <option value="not-paid">Not Paid</option>
+      </select>
+
+
+
+
+
+      <!--Harcamalar listesi-->
+      <div id="list"></div>
+        <!--Harcama kartı-->
+        <!-- <div id="expense" class="expense paid">
+          <h2 class="name">Cellphone</h2>
+          <h2 class="price">15000</h2>
+          <div class="btns">
+            <img src="assets/pay-icon.png" >
+            <img src="assets/delete-icon.png" >
+          </div>
+        </div> -->
+      
+
+
+
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
